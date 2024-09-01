@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand">السرداب</a>
+          
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+  
+      <section class="custom-section">
+        <h1>مرحبًا بكم في موقعنا!</h1>
+       
+    </section> 
+
+    <div class="visme_d" data-title="Special Offers Subscription Form" data-url="31njxdj4-special-offers-subscription-form?fullPage=true" data-domain="forms" data-full-page="true" data-min-height="100vh" data-form-id="90618"></div><script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script> 
+
+    
+
+  
+
+
+
+
+    <section>
+
+    <div class="div1" id="aaa">
+
+        <div class="container">
+            <h1>انشاء كلمات مرور قوية</h1>
+            
+            <label for="length">طول كلمة المرور:</label>
+            <input type="number" id="length" value="12" min="1" max="128">
+            
+            <label>
+                <input type="checkbox" id="numbers" checked>
+                أرقام (0-9)
+            </label>
+            <label>
+                <input type="checkbox" id="uppercase" checked>
+                حروف كبيرة (A-Z)
+            </label>
+            <label>
+                <input type="checkbox" id="lowercase" checked>
+                حروف صغيرة (a-z)
+            </label>
+            <label>
+                <input type="checkbox" id="symbols" checked>
+                علامات ترقيم
+            </label>
+            
+            <div id="symbols-list">
+                <label>علامات الترقيم:</label>
+                <span>! @ # $ % ^ & * ( ) _ + [ ] { } | ; : , . / ?</span>
+            </div>
+            
+            <input type="text" id="password" readonly>
+            <button onclick="generatePassword()">انشاء كلمة مرور</button>
+            <button onclick="copyToClipboard()">نسخ كلمة المرور</button>
+        </div>
+        
+    </div>
+    
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section11">
+
+    <div class="custom-container">
+        <h1 id="customTitle">تحويل الصوت إلى نص</h1>
+        <div class="custom-controls">
+            <select id="customLanguageSelect" onchange="customChangeLanguage()">
+                <option value="ar">العربية</option>
+                <option value="en">English</option>
+            </select>
+            <button id="customStartBtn" onclick="customStartRecording()">ابدأ</button>
+            <button id="customStopBtn" onclick="customStopRecording()">إيقاف</button>
+            <button id="customSaveBtn" onclick="customSaveText()">حفظ</button>
+        </div>
+        <div id="customTextArea" class="custom-text-area">
+            <!-- سيتم إنشاء مناطق جديدة للنص هنا -->
+        </div>
+        <div id="customSavedTexts" class="custom-saved-texts"></div>
+    </div>
+
+</section> 
+
+
+
+
+
+
+
+
+
+<section class="section11">
+
+<div class="car">
+    <div class="audio-recorder-container">
+        <h1 id="page-title">تسجيل الصوت</h1>
+        <select id="languageSelector" onchange="switchLanguage()">
+            <option value="ar">العربية</option>
+            <option value="en">English</option>
+        </select>
+        
+        <button id="startRecordBtn" onclick="startAudioRecording()">بدء التسجيل</button>
+        <button id="stopRecordBtn" onclick="stopAudioRecording()" disabled>إيقاف التسجيل</button>
+        <button id="editAudioBtn" onclick="editRecordedAudio()" disabled>تحرير الصوت</button>
+        
+        <div id="recordingIndicator" class="record-indicator" hidden>جاري التسجيل...</div>
+        <div id="recordedAudioContainer"></div>
+    </div>
+</div>
+</section>
+
+
+
+
+
+<section>
+    
+
+<div class="div1">
+    <div class="age-calculator-container" dir="ltr">
+        <h2>Unique Age Calculator</h2>
+        <input type="date" id="dobInput" class="input-date-field">
+        <button onclick="computeAge()" class="calculate-btn">Get Age</button>
+        <div id="ageDisplay" class="age-result"></div>
+    </div>
+    
+    </div>
+    
+</section>
+    
+    
+    
+
+
+
+
+
+    
+
+
+
+
+<section class="section11">
+    <div class="currency-container">
+        <h1>محول العملات</h1>
+        <div class="converter-widget">
+            <div class="amount-group">
+                <label for="currencyAmount">المبلغ:</label>
+                <input type="number" id="currencyAmount" placeholder="أدخل المبلغ">
+            </div>
+            <div class="currency-group">
+                <label for="currencyFrom">من:</label>
+                <select id="currencyFrom">
+                    <option value="USD">الدولار الأمريكي</option>
+                    <option value="EUR">اليورو</option>
+                    <option value="GBP">الجنيه الإسترليني</option>
+                    <option value="JPY">الين الياباني</option>
+                </select>
+            </div>
+            <div class="currency-group">
+                <label for="currencyTo">إلى:</label>
+                <select id="currencyTo">
+                    <option value="USD">الدولار الأمريكي</option>
+                    <option value="EUR">اليورو</option>
+                    <option value="GBP">الجنيه الإسترليني</option>
+                    <option value="JPY">الين الياباني</option>
+                </select>
+            </div>
+            <button id="currencyConvertBtn">تحويل</button>
+            <div id="conversionResult"></div>
+        </div>
+    </div>
+    </section>
+    
+    
+
+
+
+
+
+
+    
+<section class="section11">
+    <div class="atm-container">
+        <h1>
+            
+         
+            
+            
+            الصراف الآلي</h1>
+        <div class="atm-functions">
+            <div class="atm-balance-group">
+                <label for="balanceDisplay">الرصيد الحالي:</label>
+                <input type="text" id="balanceDisplay" value="0" disabled>
+            </div>
+            <div class="atm-amount-group">
+                <label for="atmAmountInput">المبلغ:</label>
+                <input type="number" id="atmAmountInput" placeholder="أدخل المبلغ">
+            </div>
+            <div class="atm-buttons">
+                <button id="depositBtn">إيداع</button>
+                <button id="withdrawBtn">سحب</button>
+            </div>
+            <div id="atmResult"></div>
+        </div>
+    </div>
+    
+    
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <section class="section20">
+        <div class="task-manager">
+            <h1>إدارة المهام وتنظيم الوقت</h1>
+            <input type="text" id="taskInput" placeholder="أدخل مهمة جديدة...">
+            <select id="prioritySelect">
+                <option value="منخفضة">منخفضة</option>
+                <option value="متوسطة">متوسطة</option>
+                <option value="عالية">عالية</option>
+            </select>
+            <button onclick="addTask()">إضافة المهمة</button>
+            <ul id="taskList"></ul>
+            <div id="totalTime">الوقت الكلي المستغرق: 00:00:00</div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<section class="section22">
+    <h1>لعبة الذاكرة</h1>
+    <div>
+        <span>محاولات: </span><span id="attemptCount">0</span>
+    </div>
+    <div>
+        <span>نجاحات: </span><span id="successCount">0</span>
+    </div>
+    <div>
+        <span>إخفاقات: </span><span id="failureCount">0</span>
+    </div>
+    <div>
+        <button onclick="setDifficulty('easy')">سهل</button>
+        <button onclick="setDifficulty('medium')">متوسط</button>
+        <button onclick="setDifficulty('hard')">صعب</button>
+    </div>
+    <div class="game-board" id="gameBoard"></div>
+    
+</section>
+
+
+
+
+
+
+<section class="section22" >
+
+<div class="game-container" dir="ltr">
+    <h1>Tic Tac Toe</h1>
+    <div id="game-board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+    <button id="reset-button">Reset Game</button>
+    <p id="status"></p>
+</div>
+
+</section>
+
+
+
+
+
+
+
+<section class="section0" dir="ltr">
+
+
+
+<h1>Math Challenge Game</h1>
+<p id="question">Press "Start" to begin!</p>
+<input type="number" id="answer-input" placeholder="Enter your answer">
+<button id="submit-button">Submit</button>
+<button id="start-button">Start Game</button>
+<p id="score">Score: 0</p>
+<p id="timer">Time Left: 30s</p>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section0" dir="ltr">
+    <div class="calc-container">
+        <div id="displayArea" class="display-area"></div>
+        <div class="button-container">
+            <button class="btn-clear" onclick="clearCalculator()">C</button>
+            <button class="btn-op" onclick="appendToCalc('/')">/</button>
+            <button class="btn-op" onclick="appendToCalc('*')">*</button>
+            <button class="btn-op" onclick="appendToCalc('-')">-</button>
+            <button class="btn-op" onclick="appendToCalc('+')">+</button>
+            <button class="btn-number" onclick="appendToCalc('7')">7</button>
+            <button class="btn-number" onclick="appendToCalc('8')">8</button>
+            <button class="btn-number" onclick="appendToCalc('9')">9</button>
+            <button class="btn-number" onclick="appendToCalc('4')">4</button>
+            <button class="btn-number" onclick="appendToCalc('5')">5</button>
+            <button class="btn-number" onclick="appendToCalc('6')">6</button>
+            <button class="btn-number" onclick="appendToCalc('1')">1</button>
+            <button class="btn-number" onclick="appendToCalc('2')">2</button>
+            <button class="btn-number" onclick="appendToCalc('3')">3</button>
+            <button class="btn-number" onclick="appendToCalc('0')">0</button>
+            <button class="btn-decimal" onclick="appendToCalc('.')">.</button>
+            <button class="btn-equal" onclick="computeResult()">=</button>
+        </div>
+    </div>
+
+</section>
+
+
+
+<section class="section22">
+
+<div class="clock-container" dir="ltr">
+    <div class="digital-clock" id="digitalClock">
+        <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+    </div>
+    <div class="am-pm" id="amPm"></div>
+</div>
+</section>
+
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100034886384072&mibextid=ZbWKwL" target="_blank" class="social-link facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="social-link twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/radwan_karam_69?igsh=dzBldTBiYzZ6dTB2" target="_blank" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="social-link linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.whatsapp.com" target="_blank" class="social-link whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <div class="designer-info">
+                <img src="image/WhatsApp Image 2024-07-12 at 9.04.36 AM.jpeg" alt="Website Designer" class="designer-photo">
+                <p>Engineer  [Radwan karam ahmed]</p>
+            </div>
+        </div>
+    </footer>
+     
+
+ 
+
+ <script src="mminm.js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
